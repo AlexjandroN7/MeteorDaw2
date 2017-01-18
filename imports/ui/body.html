@@ -5,13 +5,17 @@
             <label class="hide-completed">
         <input type="checkbox" />
         Hide Completed Tasks
-      </label>
-            <form class="new-task">
+      </label> {{> loginButtons}}       {{#if currentUser}}
 
-                <input type="text" name="text" placeholder="Type to add new tasks" />
+        <form class="new-task">
 
-            </form>
-        </header>
+          <input type="text" name="text" placeholder="Type to add new tasks" />
+
+        </form>
+
+      {{/if}}
+
+    </header>
 
 
         <ul>
